@@ -1,0 +1,61 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background: url("mouseevent.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+
+}
+
+body{
+    color: #ffffff;
+    font-family: 'Source Code Pro', monospace;
+    overflow: hidden;
+
+}
+
+.logo {
+    text-align: right;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin: 1em;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+
+}
+
+.mouse-event {
+    font-weight: bold;
+    border: 1px solid white;
+    margin: 40px;
+    min-width: 110px;
+    position: relative;
+}
+
+.mouse-event h4 {
+    position: absolute;
+    font-weight: 400;
+}
+
+/* max-width: 500px means 500px OR SMALLER */
+@media(max-width: 500px) {
+    .container {
+        /* display: flex; */
+        flex-direction: column;
+    }
+    .mouse-event {
+        margin: 40px;
+    }
+}
